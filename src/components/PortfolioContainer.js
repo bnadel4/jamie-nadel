@@ -3,6 +3,7 @@ import Nav from './Nav';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -21,11 +22,12 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-
-      {renderPage()}
-      {/* This is footer is rendered */}
+      <h1>hello wurl2</h1>
       
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+    
+      {renderPage()}
+      <Footer />
     </div>
   );
 }

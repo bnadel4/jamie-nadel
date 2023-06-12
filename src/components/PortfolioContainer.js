@@ -22,10 +22,10 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      <h1>hello wurl2</h1>
-      
+      <h1>Jamie Nadel</h1>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-    
+      
+
       {renderPage()}
       <Footer />
     </div>

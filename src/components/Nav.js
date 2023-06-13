@@ -13,32 +13,22 @@ function Nav({ currentPage, handlePageChange }) {
     <ul>
       <li>
         <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
+          href="#aboutMe"
+          onClick={() => handlePageChange('AboutMe')}
 
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
         >
-          Home
+          About Me
         </a>
       </li>
       <li>
         <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
+          href="#portfolio"
+          onClick={() => handlePageChange('Portfolio')}
 
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          About
-        </a>
-      </li>
-      <li>
-        <a
-          href="#blog"
-          onClick={() => handlePageChange('Blog')}
-
-          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
-        >
-          Blog
+          Portfolio
         </a>
       </li>
       <li>
@@ -49,6 +39,16 @@ function Nav({ currentPage, handlePageChange }) {
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
+        </a>
+      </li>
+      <li>
+        <a
+          href="#resume"
+
+          onClick={() => handlePageChange('Resume')}
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
         </a>
       </li>
     </ul>

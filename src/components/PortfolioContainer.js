@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import Header from './Header';
 import Nav from './Nav';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 import Footer from './Footer';
+
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -14,19 +17,21 @@ export default function PortfolioContainer() {
     }
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
+    } 
+    if (currentPage === 'Contact') {
+      return <Contact />;
     }
-    return <Contact />;
+    return <Resume />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      <h1>Jamie Nadel</h1>
-      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       
-
       {renderPage()}
+
       <Footer />
     </div>
   );

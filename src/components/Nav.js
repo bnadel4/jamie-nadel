@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 1em;
-
 `
 
 function Nav({ currentPage, handlePageChange }) {

@@ -1,16 +1,25 @@
 import React from 'react';
+import styled from 'styled-components';
+import headshot from '../../assets/headshot.jpg';
+
+const HeadshotImg = styled.img`
+  width: 50%;
+  margin: 1em auto;
+  display: flex;
+`;
 
 export default function AboutMe() {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>About Me</h1>
+      <HeadshotImg src={headshot} alt="jamie nadel headshot" />;
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+      Currently learning full stack JavaScript. I'm always open to making 
+      new connections, expanding and sharing my knowledge. 
+      Experienced creative with a demonstrated history working as a 
+      stagehand, photographer, film producer, and video editor. 
+      Humble and driven professional with a Bachelor's Degree focused 
+      in TV/Film Production from The Evergreen State College.
       </p>
     </div>
   );

@@ -1,24 +1,39 @@
 import React from 'react';
+import styled from 'styled-components';
+import Project from '../Project';
+import foodleImg from '../../assets/foodle-screenshotdesktop.png';
+import onlyCheeseImg from '../../assets/homepage.png';
+
+const projects = [
+  {
+    title: 'Only Cheese',
+    photo: onlyCheeseImg,
+    deployedLink: 'https://only-cheese.herokuapp.com/',
+    githubLink: 'https://github.com/eileenmh/only-cheese'
+  },
+  {
+    title: 'Foodle',
+    photo: foodleImg,
+    deployedLink: 'https://gpaul12.github.io/foodle/',
+    githubLink: 'https://github.com/gpaul12/foodle'
+  }
+];
 
 export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <section>
+        {
+          projects.map(( item, index ) => (
+            <Project
+              key={`project-item-${index}`}
+              project={item}
+            >
+            </Project>
+          ))
+        }
+      </section>
     </div>
   );
 }

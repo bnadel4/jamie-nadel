@@ -22,8 +22,8 @@ export default function Footer() {
   return (
     <FooterWrapper className="footer">
       <div className="container">
-        <Button href="https://www.youtube.com/shorts/SXHMnicI6Pg">Github</Button>
-        <span className="text-muted">© 2023 by <a href="linkedin.com/in/jamienadel">Jamie nadel</a></span>
+        <Button href="https://github.com/bnadel4">Github</Button>
+        <span className="text-muted">© 2023 by <a href="https://www.linkedin.com/in/jamienadel">Jamie nadel</a></span>
       </div>
     </FooterWrapper>
   );

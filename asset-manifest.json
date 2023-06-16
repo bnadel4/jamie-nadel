@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/jamie-nadel/static/css/main.3ffdcf4a.css",
+    "main.js": "/jamie-nadel/static/js/main.bcaec033.js",
+    "static/js/787.1ed0c42c.chunk.js": "/jamie-nadel/static/js/787.1ed0c42c.chunk.js",
+    "static/media/foodle-screenshotdesktop.png": "/jamie-nadel/static/media/foodle-screenshotdesktop.9fda97be470d76e14ee2.png",
+    "static/media/homepage.png": "/jamie-nadel/static/media/homepage.bdd4551a6ae25ee7b8a6.png",
+    "static/media/headshot.jpg": "/jamie-nadel/static/media/headshot.9b2bb19df52adc9fb95e.jpg",
+    "index.html": "/jamie-nadel/index.html",
+    "main.3ffdcf4a.css.map": "/jamie-nadel/static/css/main.3ffdcf4a.css.map",
+    "main.bcaec033.js.map": "/jamie-nadel/static/js/main.bcaec033.js.map",
+    "787.1ed0c42c.chunk.js.map": "/jamie-nadel/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ffdcf4a.css",
+    "static/js/main.bcaec033.js"
+  ]
+}
